@@ -1,0 +1,42 @@
+{
+    "todohighlight.isEnable": true,
+    "todohighlight.isCaseSensitive": true,
+    "todohighlight.keywords": [
+        {
+            "text": " TODO: ",
+            "color": "#a8c023",
+            "isWholeLine": true,
+            "backgroundColor": "rgba(0,0,0,0)",
+        },
+        {
+            "text": " FIXME: ",
+            "color": "#f06292",
+            "isWholeLine": true,
+            "backgroundColor": "rgba(0,0,0,0)",
+        },
+        {
+            "text": " NOTE: ",
+            "color": "#05AAAE",
+            "isWholeLine": true,
+            "backgroundColor": "rgba(0,0,0,0)",
+        },
+        {
+            "text": " WARNING: ",
+            "color": "#F27200",
+            "isWholeLine": true,
+            "backgroundColor": "rgba(0,0,0,0)",
+        },
+        {
+            "text": " Title: ",
+            "color": "#FF1200",
+            "isWholeLine": true,
+            "backgroundColor": "rgba(0,0,0,0)",
+        },
+        {
+            "text": " Subtitle: ",
+            "color": "#BE0011",
+            "isWholeLine": true,
+            "backgroundColor": "rgba(0,0,0,0)",
+        }
+    ],
+}

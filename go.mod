@@ -7,6 +7,7 @@ require (
 	github.com/go-playground/form/v4 v4.2.1
 	github.com/go-playground/validator/v10 v10.20.0
 	github.com/go-resty/resty/v2 v2.13.0
+	github.com/shopspring/decimal v1.4.0
 	github.com/stretchr/testify v1.8.4
 )
 

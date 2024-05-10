@@ -3,8 +3,8 @@ package client
 import (
 	"context"
 	"github.com/Rhymond/go-money"
+	"github.com/shopspring/decimal"
 	"github.com/stretchr/testify/assert"
-	"math/big"
 	"os"
 	"testing"
 
@@ -83,7 +83,7 @@ func TestCurrencyClient_GetLatestRates(t *testing.T) {
 			}
 			assert.Greater(t, len(got.Rates), 0)
 			if tt.args.params.Base != "" {
-				assert.Equal(t, tt.args.params.Base, got.Base)
+				assert.Equal(t, tt.args.params.Base, got.Base.Code)
 			}
 		})
 	}
@@ -109,7 +109,7 @@ func TestCurrencyClient_ConvertCurrency(t *testing.T) {
 				params: &model.ConvertCurrencyParams{
 					From:  money.CZK,
 					To:    money.USD,
-					Value: *big.NewInt(1),
+					Value: decimal.NewFromInt(1),
 				},
 			},
 		},

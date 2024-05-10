@@ -1,9 +1,8 @@
 package model
 
 import (
-	"math/big"
-
 	"github.com/Rhymond/go-money"
+	"github.com/shopspring/decimal"
 )
 
 type GetCurrenciesParams struct {
@@ -35,9 +34,9 @@ type GetLatestRatesResponse struct {
 }
 
 type ConvertCurrencyParams struct {
-	From  string  `path:"from"`
-	To    string  `path:"to"`
-	Value big.Int `path:"value"`
+	From  string          `path:"from"`
+	To    string          `path:"to"`
+	Value decimal.Decimal `path:"value"`
 }
 
 type ConvertCurrencyResponse struct {
@@ -46,7 +45,7 @@ type ConvertCurrencyResponse struct {
 		Rate      float64 `json:"rate"`
 	} `json:"meta"`
 
-	Disclaimer string  `json:"disclaimer"`
-	License    string  `json:"license"`
-	Response   big.Int `json:"response"`
+	Disclaimer string          `json:"disclaimer"`
+	License    string          `json:"license"`
+	Response   decimal.Decimal `json:"response"`
 }

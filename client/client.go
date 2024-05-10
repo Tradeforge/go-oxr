@@ -17,8 +17,6 @@ type Client struct {
 	CurrencyClient
 }
 
-type Option func(*client.Client)
-
 func NewClient(
 	apiURL string,
 	apiKey string,
